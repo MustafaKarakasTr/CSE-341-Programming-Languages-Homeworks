@@ -1,0 +1,3 @@
+append and concat functions work only 
+if the input list(s) is /are given as identifier.
+disp function does not except append and concat functions as input.

@@ -1,0 +1,34 @@
+(set a 2)
+(disp a)
+(set num (* 3 a))
+(disp num)
+(set num (* 3 num))
+(disp num)
+(list 4 5 6)
+(append (list 1 2) a)
+(set li (list 1 2 3))
+(set li2 (list 4 5 67))
+(disp li)
+(disp li2)
+;; append test
+(append li (* 2 4))
+(append (list 6 7 (* 2 4)) (+ 1 2))
+(append li2 num)
+(append (list 6 7 (* a 4)) num)
+;; concat test
+(concat (list 4 5) (list 7 8))
+(concat (list 0 5 6) li)
+(concat li2 (list 7 8 9 10))
+(concat li li2)
+;; if test
+(disp num)
+(disp a)
+(if (and true false) (* 3 4) num) ;; prints value of num = 18
+(if (less a num) a num) ;; prints value of a = 2
+;; changing identifers type
+(disp a)
+(set a (list 6 7 8))
+(disp a)
+(set a 7)
+(disp a)
+(exit)
